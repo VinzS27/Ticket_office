@@ -1,0 +1,71 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: #1d0981;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    div {
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .inline-divs {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+    }
+    
+    
+    #ticketsAvailable, #purchasedTickets {
+        width: 47.1%;
+        padding: 10px;
+        background-color: #fff;
+    }
+    
+
+    h2,h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    select{
+        width: 10%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 40px;
+    }
+
+    input{
+        width: 10%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    h4{
+        background-color: #1d0981;
+        height: 50px;
+    }

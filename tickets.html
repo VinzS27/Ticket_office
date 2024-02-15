@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tickets.css">
+</head>
+<body>
+    <h1>Procedura d'acquisto</h1>
+    <div class="inline-divs" id="ticketsAvailable">
+        <h2>Biglietti Disponibili</h2>
+        <p>Stadio: <span id="stadiumTickets">100</span></p>
+        <p>Teatro: <span id="theatreTickets">150</span></p>
+        <p>Concerto: <span id="concertTickets">200</span></p>
+    </div>
+    <div class="inline-divs" id="purchasedTickets">
+        <h2>Biglietti Acquistati</h2>
+        <p>Stadio: <span id="sPurchased">0</span></p>
+        <p>Teatro: <span id="tPurchased">0</span></p>
+        <p>Concerto: <span id="cPurchased">0</span></p>
+    </div>
+    <div>
+        <h2>Acquista o rinuncia a biglietti già acquistati</h2>
+        <label for="ticketType">Tipologia:</label>
+        <select id="ticketType">
+            <option value="NS">Stadio</option>
+            <option value="NT">Teatro</option>
+            <option value="NC">Concerto</option>
+        </select>
+        <label for="quantity">Quantità:</label>
+        <input type="number" id="quantity" min="1" max="200" value="1" required />
+        <button id="buyButton" onclick="buyTickets()">Acquista</button>
+        <button id="removeButton" onclick="removeTickets()">Rinuncia</button>
+    </div>
+    <h4></h4>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
+
